@@ -33,7 +33,7 @@ Publish the website in the given URL.
 
 ## PROGRAM :
 ### HTML :
-```HTML
+```py
 <!DOCTYPE html>
 <html>
 <head>
@@ -130,7 +130,7 @@ input[type="submit"]:hover {
 
 ```
 ### VIEWS.PY :
-```html
+```py
 from django.shortcuts import render
 
 def calculate_power(request):
@@ -153,7 +153,7 @@ def calculate_power(request):
 
 ```
 ### URLS.PY
-```html
+```py
 from django.urls import path
 from . import views
 
@@ -163,7 +163,7 @@ urlpatterns = [
 
 ```
 ### MAIN URLS.PY :
-```html
+```py
 from django.contrib import admin
 from django.urls import path, include
 
