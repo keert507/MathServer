@@ -176,10 +176,12 @@ urlpatterns = [
 ```
 
 ## SERVER SIDE PROCESSING:
+### INPUT :
 ![image](https://github.com/user-attachments/assets/10fcddee-abc6-41bd-99c8-54e79d495eb6)
+### OUTPUT:
+![image](https://github.com/user-attachments/assets/7f493a63-899d-40da-ba90-5d58f9d96e35)
 
 
-## HOMEPAGE:
 
 
 ## RESULT:
