@@ -130,7 +130,7 @@ input[type="submit"]:hover {
 
 ```
 ### VIEWS.PY :
-```
+```html
 from django.shortcuts import render
 
 def calculate_power(request):
@@ -147,15 +147,13 @@ def calculate_power(request):
             # Calculate power if both inputs are valid
             power = i ** 2 * r
         except ValueError:
-            # If input is not a valid float, show an error or handle as needed
             power = "Invalid input"
 
-    # Render the HTML template with values
     return render(request, "app/maths.html", {"i": i, "r": r, "power": power})
 
 ```
 ### URLS.PY
-```
+```html
 from django.urls import path
 from . import views
 
@@ -165,19 +163,20 @@ urlpatterns = [
 
 ```
 ### MAIN URLS.PY :
-```
+```html
 from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('app.urls')),  # Replace 'your_app_name' with your app's name
+    path('', include('app.urls')), 
 ]
 
 
 ```
 
 ## SERVER SIDE PROCESSING:
+![image](https://github.com/user-attachments/assets/10fcddee-abc6-41bd-99c8-54e79d495eb6)
 
 
 ## HOMEPAGE:
